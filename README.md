@@ -1,2 +1,2 @@
-# Mi primer sitio web1
+# Mi primer sitio web
 Mi nombre es Gastón Rossello
