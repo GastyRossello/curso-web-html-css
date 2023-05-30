@@ -9,12 +9,43 @@
     <meta name="author" content="Gastón Rossello, e-mail: rossellogaston@gmail.com">
     <meta name="keywords" content="cerámica, taller, arcilla, torno, alfarería, artesanal, artesanías, piezas, esmalte, bizcocho, horno">
     <script src="https://kit.fontawesome.com/b07329e822.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            margin: 0px;
+        }
+        
+        header {
+            position: fixed;
+            height: 200px;
+            width: calc(100% - 0px - 20px);
+            background-color: #CDE6B4;
+            display: flex;
+            
+        }
+
+        ul li {
+            display: inline;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .logo {
+            width: 180px;
+            height: 180px;
+        }
+
+        input {
+            margin-top: 200px;
+        }
+    </style>
 </head>
 <body>
     <!-- IMAGEN PARA MODELO TIPO HERO -->
     <header>
         <a href="/index.html">
-        <img src="" alt="Logo">
+        <img class="logo" src="../img/logo.png" alt="Logo">
         </a>
         <nav>
             <ul>
@@ -40,13 +71,13 @@
                     <a href="#comocomprar">
                         <span> Cómo comprar </span>
                     </a>
-                </li>  buscador
+                </li>
             </ul>
         </nav>
     </header>
-    <nav>
-        <input type="text" name="" placeholder="Buscar">
-    </nav>
+    <div>
+        <input type="text" name="" placeholder="Buscar por palabra clave">
+    </div>
     <div>
         <h1>Taller de cerámica artesanal</h1>
     </div>
