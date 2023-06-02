@@ -9,40 +9,77 @@
     <meta name="author" content="Gastón Rossello, e-mail: rossellogaston@gmail.com">
     <meta name="keywords" content="cerámica, taller, arcilla, torno, alfarería, artesanal, artesanías, piezas, esmalte, bizcocho, horno">
     <script src="https://kit.fontawesome.com/b07329e822.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght,SHRP@213,48&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0px;
+            font-family: "geologica";
         }
         
         header {
             position: fixed;
-            height: 200px;
-            width: calc(100% - 0px - 20px);
+            top: 0px;
+            height: 160px;
+            width: 100%;
             background-color: #CDE6B4;
             display: flex;
-            
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav {
+            margin-right: 100px;
         }
 
         ul li {
             display: inline;
+            margin: 0px 30px;
         }
 
         a {
             text-decoration: none;
+            font-size: 1.3rem;
+            color: black;
         }
 
         .logo {
-            width: 180px;
-            height: 180px;
+            width: 150px;
+            height: 150px;
+            margin-left: 20px;
+        }
+
+        #principal {
+            margin-top: 160px;
+            height: 580px;
+            background-image: url("../img/pagina1.png");
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #principal1 {
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #principal2 {
+            height: 50%;
+            display: flex;
         }
 
         input {
-            margin-top: 200px;
+            height: 40px;
+            width: 200px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <!-- IMAGEN PARA MODELO TIPO HERO -->
     <header>
         <a href="/index.html">
         <img class="logo" src="../img/logo.png" alt="Logo">
@@ -75,12 +112,14 @@
             </ul>
         </nav>
     </header>
-    <div>
-        <input type="text" name="" placeholder="Buscar por palabra clave">
-    </div>
-    <div>
-        <h1>Taller de cerámica artesanal</h1>
-    </div>
+    <section id="principal">
+        <div id="principal1">
+            <input type="text" name="" placeholder="Buscar">
+        </div>
+        <div id="principal2">
+            <h1>Taller de cerámica artesanal</h1>
+        </div>
+    </section>
 <!-- IMAGEN PARA MODELO TIPO HERO -->
     <section id="sobrenosotros">
         <div>
