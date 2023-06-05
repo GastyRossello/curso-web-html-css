@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geologica:wght,SHRP@213,48&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=DM+Serif+Display&family=Frank+Ruhl+Libre:wght@300&family=Sarabun:wght@100&family=Space+Mono&family=Spectral:wght@200&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0px;
@@ -23,7 +24,7 @@
             top: 0px;
             height: 160px;
             width: 100%;
-            background-color: #CDE6B4;
+            background-color: rgb(205, 230, 180);
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -52,7 +53,8 @@
 
         #principal {
             margin-top: 160px;
-            height: 580px;
+            border:6px solid black;
+            height: 405px;
             background-image: url("../img/pagina1.png");
             background-size: cover;
             display: flex;
@@ -60,22 +62,203 @@
         }
         
         #principal1 {
-            height: 50%;
+            height: 40%;
             display: flex;
             justify-content: center;
-            align-items: center;
-
+            align-items: end;
         }
 
         #principal2 {
-            height: 50%;
+            height: 60%;
             display: flex;
+            justify-content: center;
+            align-items: end;
+        }
+
+        #principal1 i{
+            margin-right: 10px;
+            margin-bottom: 17px;;
         }
 
         input {
             height: 40px;
-            width: 200px;
+            width: 300px;
+            background-color: #CDE6B4;
+            color: #000000;
+            border: 1px solid #ffffff;
+            border-radius: 8px;
+            box-shadow: 1px 1px 3px rgba(0, 194, 58, 0.1);   
+            
+        }
+
+        h1 {
+            margin-right: 50px;
+            margin-bottom: 40px;
+            font-weight: bold;
+            font-size: 60px;
+            /* font-family: "Frank Ruhl Libre"; */
+            color: #ffffff;
+            word-spacing: 35px;
+        }
+
+        #sobrenosotros{
+            height: 450px;
+            background-image: url("../img/sobrenosotros.png");
+            background-size: cover;
+            border:6px solid black;
+            border-top: 0px;
+        }
+
+        #sobrenosotros1{
+            height: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+        }
+
+        #sobrenosotros2{
+            height: 70%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #parrafo{
+            width: 900px;
+            height: 200px;
+            background-color: rgba(144, 142, 142, 0.7);
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #sobrenosotros h2{
+            margin-top: 0px;
+            margin-bottom: 0px;
+            color: rgb(0, 0, 0);
+            font-size: 70px;
+            word-spacing: 40px;
+        }
+
+        #parrafo p{
+            font-weight: bold;
+            font-size: 25px;
             text-align: center;
+        }
+
+        #ubicacion{
+            background-image: url("../img/ubicacion.png");
+            background-size: cover;
+            border:6px solid black;
+            border-top: 0px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #ubicacion1{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #ubicacion2{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #ubicacion1 h2{
+            background-color: rgba(205, 230, 180, 0.7);
+            width: 400px;
+            height: 200px;
+            font-size: 45px;
+            color: #ffffff;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #ubicacion2A{
+            width: 550px;
+            height: 550px;
+            background-color: rgba(205, 230, 180, 0.7);
+            border-radius: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #comocomprar{
+            height: 400px;
+            background-color: #d1c5b0;
+            border:6px solid black;
+            border-top: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; 
+        }
+
+        #comocomprar h2{
+            margin-top: 0px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            font-size: 50px;
+            padding-top: 20px;
+        }
+        
+        #comocomprar p{
+            background-color: rgb(168, 163, 163);
+            border-radius: 40px;
+            width: 1000px;
+            color: rgb(255, 255, 255);
+            font-size: 25px;
+            height: 200px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            
+        }
+
+        #comocomprar1{
+            height: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+        }
+
+        #comocomprar2{
+            height: 70%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding: 0px 20px;
+            background-color: #CDE6B4;
+        }
+
+        footer a{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer i{
+            padding: 0px 30px;
+        }
+
+        h3{
+            font-size: 15px;
         }
     </style>
 </head>
@@ -114,61 +297,58 @@
     </header>
     <section id="principal">
         <div id="principal1">
-            <input type="text" name="" placeholder="Buscar">
+            <i class="fa-solid fa-magnifying-glass fa-2xl" style="color: #000000;"></i>
+            <input type="text" name="" placeholder="">
         </div>
         <div id="principal2">
             <h1>Taller de cerámica artesanal</h1>
         </div>
     </section>
-<!-- IMAGEN PARA MODELO TIPO HERO -->
     <section id="sobrenosotros">
-        <div>
-            <h2>Sobre nosotros</h2>
+        <div id="sobrenosotros1">
+            <h2>SOBRE NOSOTROS</h2>
         </div>
-        <div>
-            <p>Texto descriptivo del emprendimiento</p>
+        <div id="sobrenosotros2">
+            <div id="parrafo">
+            <p>Texto descriptivo del emprendimiento: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, atque consectetur odit quae architecto qui adipisci nostrum amet dolorem repellendus laudantium similique consequatur necessitatibus commodi sapiente, tempora fugiat, voluptatum dolorum.</p>
+            </div>        
         </div>
     </section>
-<!-- IMAGEN PARA MODELO TIPO HERO -->
     <section id="ubicacion">
-        <div>
-            <h2>Nuestro local</h2>
+        <div id="ubicacion1">
+                <h2>NUESTRO LOCAL</h2>
         </div>
-        <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124969.34985720764!2d-58.52443883595142!3d-34.60552198875671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses!2sar!4v1684264836816!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div id="ubicacion2">
+            <div id="ubicacion2A">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124969.34985720764!2d-58.52443883595142!3d-34.60552198875671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses!2sar!4v1684264836816!5m2!1ses!2sar" width="500" height="500" style="border:0; border-radius: 250px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
     </section>
-<!-- IMAGEN PARA MODELO TIPO HERO -->
     <section id="comocomprar">
-        <div>
-            <div>
-                <h2>Cómo comprar</h2>
+            <div id="comocomprar1">
+                <h2>CÓMO COMPRAR</h2>
             </div>
-            <div>
-                <p>Descripción de métodos de compra</p>
+            <div id="comocomprar2">
+                <p>Descripción de métodos de compra: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam explicabo magnam vero impedit eos sunt necessitatibus delectus officiis rerum optio repellendus quod earum, quos labore illum quasi, quia veniam! Non.</p>
             </div>
-        </div>
     </section>
     <footer>
-        <div>
-            <a href="#">
-                <i class="fa-brands fa-whatsapp"></i>
-                <h3>Nº wpp</h3>
-            </a>
-            <a href="#">
-                <i class="fa-brands fa-facebook"></i>
-                <h3>Usuario fb</h3>
-            </a>
-            <a href="#">
-                <i class="fa-brands fa-instagram"></i>
-                <h3>Usuario ig</h3>
-            </a>
-            <a href="">
-                <i class="fa-solid fa-at"></i>
-                <h3>Correo electrónico</h3>
-            </a>
-        </div>
+        <a href="#">
+            <i class="fa-brands fa-whatsapp" width="40" height="40"></i>
+            <h3>11-0000-0000</h3>
+        </a>
+        <a href="#">
+            <i class="fa-brands fa-facebook"></i>
+            <h3>NIMBOCERÁMICA</h3>
+        </a>
+        <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+            <h3>NIMBOCERÁMICA</h3>
+        </a>
+        <a href="">
+            <i class="fa-solid fa-at"></i>
+            <h3>nimboceramica@----.com</h3>
+        </a>
     </footer>
-
 </body>
 </html>

@@ -9,12 +9,128 @@
     <meta name="author" content="Gastón Rossello, e-mail: rossellogaston@gmail.com">
     <meta name="keywords" content="cerámica, taller, arcilla, torno, alfarería, artesanal, artesanías, piezas, esmalte, bizcocho, horno">
     <script src="https://kit.fontawesome.com/b07329e822.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght,SHRP@213,48&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=DM+Serif+Display&family=Frank+Ruhl+Libre:wght@300&family=Sarabun:wght@100&family=Space+Mono&family=Spectral:wght@200&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            font-family: "geologica";
+            background-image: url("../img/nuestracoleccion.png");
+            background-size: cover;
+        }
+        
+        header {
+            position: fixed;
+            top: 0px;
+            height: 160px;
+            width: 100%;
+            background-color: rgb(205, 230, 180);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav {
+            margin-right: 100px;
+        }
+
+        ul li {
+            display: inline;
+            margin: 0px 30px;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 1.3rem;
+            color: black;
+        }
+
+        .logo {
+            width: 150px;
+            height: 150px;
+            margin-left: 20px;
+        }   
+
+        #titulo{
+            display: flex;
+            justify-content: end;
+            margin-right: 150px;
+            height: 35vh;
+        }
+
+        h1{
+            margin-top: 160px;
+            width: 700px;
+            height: 100px;
+            background-color: rgba(192, 174, 153, 0.692);
+            border-radius: 100px;
+            border-end-end-radius: 0px;
+            border-start-start-radius: 0px;
+            text-align: center;
+            font-size: 50px;
+            color: antiquewhite;
+        }
+
+        #principal{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            height: 55vh;
+        }
+
+        #principal div{
+            background-color: rgba(192, 174, 153, 0.836);
+            width: 40vw;
+            border-radius: 70px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        h2{
+            font-size: 50px;
+            text-align: center;
+            color: antiquewhite;
+            height: 10%;
+        }
+
+        div a{
+            text-align: center;
+            padding-bottom: 40px;
+            height: 90%;
+        }
+
+        footer{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding: 0px 20px;
+            background-color: #CDE6B4;
+            height: 10vh;
+        }
+
+        footer a{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer i{
+            padding: 0px 30px;
+        }
+
+        h3{
+            font-size: 15px;
+        }
+    </style>
 </head>
 <body>
-<!-- IMAGEN PARA MODELO TIPO HERO -->
     <header>
         <a href="/index.html">
-        <img src="" alt="Logo">
+        <img class="logo" src="../img/logo.png" alt="Logo">
         </a>
         <nav>
             <ul>
@@ -40,46 +156,44 @@
                     <a href="/index.html">
                         <span> Cómo comprar </span>
                     </a>
-                </li>  buscador
+                </li>
             </ul>
         </nav>
     </header>
-    <div>
-        <h1>Nuestra colección</h1>
+    <div id="titulo">
+        <h1>NUESTRA COLECCIÓN</h1>
     </div>
-    <nav>
-        <h2>Utilitarios</h2>
-        <nav>
-            <a href="">
-                <img src="" alt="Utilitarios">
-            </a>
-        </nav>
-        <h2>Decorativos</h2>
-        <nav>
-            <a href="">
-                <img src="" alt="Decorativos">
-            </a>
-        </nav>
-    </nav>
-    <footer>
+    <div id="principal">
         <div>
-            <a href="#">
-                <i class="fa-brands fa-whatsapp"></i>
-                <h3>Nº wpp</h3>
-            </a>
-            <a href="#">
-                <i class="fa-brands fa-facebook"></i>
-                <h3>Usuario fb</h3>
-            </a>
-            <a href="#">
-                <i class="fa-brands fa-instagram"></i>
-                <h3>Usuario ig</h3>
-            </a>
+            <h2>UTILITARIOS</h2>
             <a href="">
-                <i class="fa-solid fa-at"></i>
-                <h3>Correo electrónico</h3>
+                <img src="../img/utilitarios.png" alt="Utilitarios" width="60%" style="border:0; border-radius: 50px;">
             </a>
         </div>
+        <div>
+            <h2>DECORATIVOS</h2>
+            <a href="">
+                <img src="../img/decorativos.png" alt="Decorativos" width="60%" style="border:0; border-radius: 50px;">
+            </a>
+        </div>
+    </div>
+    <footer>
+        <a href="#">
+            <i class="fa-brands fa-whatsapp" width="40" height="40"></i>
+            <h3>11-0000-0000</h3>
+        </a>
+        <a href="#">
+            <i class="fa-brands fa-facebook"></i>
+            <h3>NIMBOCERÁMICA</h3>
+        </a>
+        <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+            <h3>NIMBOCERÁMICA</h3>
+        </a>
+        <a href="">
+            <i class="fa-solid fa-at"></i>
+            <h3>nimboceramica@----.com</h3>
+        </a>
     </footer>
 </body>
 </html>
