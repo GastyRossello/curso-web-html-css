@@ -9,11 +9,122 @@
     <meta name="author" content="Gastón Rossello, e-mail: rossellogaston@gmail.com">
     <meta name="keywords" content="cerámica, taller, arcilla, torno, alfarería, artesanal, artesanías, piezas, esmalte, bizcocho, horno">
     <script src="https://kit.fontawesome.com/b07329e822.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght,SHRP@213,48&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=DM+Serif+Display&family=Frank+Ruhl+Libre:wght@300&family=Sarabun:wght@100&family=Space+Mono&family=Spectral:wght@200&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            font-family: "geologica";
+        }
+        
+        header {
+            position: fixed;
+            top: 0px;
+            height: 160px;
+            width: 100%;
+            background-color: rgb(205, 230, 180);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav {
+            margin-right: 100px;
+        }
+
+        ul li {
+            display: inline;
+            margin: 0px 30px;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 1.3rem;
+            color: black;
+        }
+
+        .logo {
+            width: 150px;
+            height: 150px;
+            margin-left: 20px;
+        }
+
+        div{
+            background-image: url("img/contacto.png");
+            background-size: cover;
+        }
+
+        h1{
+            height: 100px;
+            text-align: center;
+            margin-top: 160px;
+            font-size: 70px;
+            padding-left: 150px;
+            color: rgb(0, 0, 0);
+            background-color: rgba(243, 204, 154, 0.534);
+            border-radius: 100px;
+        }
+
+        p{
+            font-size: 40px;
+            padding-left: 30px;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        label{
+            font-size: 25px;
+            text-align: start;
+        }
+
+        input, textarea {
+            text-align: center;
+            width: 1000px;
+            background-color: bisque;
+            border-radius: 50px;
+        }
+
+        button{
+            height: 30px;
+            width: 100px;
+            background-color: ;
+        }
+
+        footer{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding: 0px 20px;
+            background-color: #CDE6B4;
+        }
+
+        footer a{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer i{
+            padding: 0px 30px;
+        }
+
+        h3{
+            font-size: 15px;
+        }
+    </style>
 </head>
 <body>
     <header>
         <a href="/index.html">
-        <img src="" alt="Logo">
+        <img class="logo" src="../img/logo.png" alt="Logo">
         </a>
         <nav>
             <ul>
@@ -39,49 +150,47 @@
                     <a href="/index.html">
                         <span> Cómo comprar </span>
                     </a>
-                </li>  buscador
+                </li>
             </ul>
         </nav>
     </header>
-    <h1>Contacto</h1>
-    <div>
+    <div id="principal">
+        <h1>Contacto</h1>
         <p>Dejanos tu consulta aquí:</p>
+        <form action="" method="get">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre">
+            <br>
+            <label for="email">Correo Electronico:</label>
+            <input type="email" name="email">
+            <br>
+            <label for="texto">Consulta:</label>
+            <textarea name="texto"cols="30" rows="10"></textarea>
+            <br>
+            <label for="archivo">Adjuntar archivo:</label>
+            <input type="file" name="archivo">
+            <br>
+            <button type="submit">Enviar</button>
+            <br>
+        </form>
     </div>
-    <form action="" method="get">
-        <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre">
-        <br>
-        <label for="email">Correo Electronico:</label>
-        <input type="email" name="email">
-        <br>
-        <label for="texto">Consulta:</label>
-        <textarea name="texto"cols="30" rows="10"></textarea>
-        <br>
-        <label for="archivo">Adjuntar archivo</label>
-        <input type="file" name="archivo">
-        <br>
-        <button type="submit">Enviar</button>
-        <br>
-    </form>
     <footer>
-        <div>
-            <a href="#">
-                <i class="fa-brands fa-whatsapp"></i>
-                <h3>Nº wpp</h3>
-            </a>
-            <a href="#">
-                <i class="fa-brands fa-facebook"></i>
-                <h3>Usuario fb</h3>
-            </a>
-            <a href="#">
-                <i class="fa-brands fa-instagram"></i>
-                <h3>Usuario ig</h3>
-            </a>
-            <a href="">
-                <i class="fa-solid fa-at"></i>
-                <h3>Correo electrónico</h3>
-            </a>
-        </div>
+        <a href="#">
+            <i class="fa-brands fa-whatsapp" width="40" height="40"></i>
+            <h3>11-0000-0000</h3>
+        </a>
+        <a href="#">
+            <i class="fa-brands fa-facebook"></i>
+            <h3>NIMBOCERÁMICA</h3>
+        </a>
+        <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+            <h3>NIMBOCERÁMICA</h3>
+        </a>
+        <a href="">
+            <i class="fa-solid fa-at"></i>
+            <h3>nimboceramica@----.com</h3>
+        </a>
     </footer>
 </body>
 </html>
